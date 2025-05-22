@@ -138,6 +138,9 @@ struct serial_s {
 #elif defined(STM32U0xx)
 #define USART3_IRQn USART3_LPUART1_IRQn
 #define USART3_IRQHandler USART3_LPUART1_IRQHandler
+#elif defined(STM32C0xx)
+#define USART3_IRQn USART3_4_IRQn
+#define USART3_IRQHandler USART3_4_IRQHandler
 #endif /* STM32F0xx */
 #endif
 
@@ -168,6 +171,9 @@ struct serial_s {
 #define USART4_IRQn USART4_LPUART3_IRQn
 #define USART4_IRQHandler USART4_LPUART3_IRQHandler
 #endif /* LPUART3_BASE */
+#elif defined(STM32C0xx)
+#define USART4_IRQn USART3_4_IRQn
+#define USART4_IRQHandler USART3_4_IRQHandler
 #endif /* STM32G0xx */
 #endif
 
