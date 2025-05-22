@@ -171,7 +171,7 @@
   #define PIN_SERIAL_TX         PA2
 #endif
 
-#define HSE_VALUE               (8000000U)  /*!< Value of the External oscillator in Hz */
+#define HSE_VALUE               (48000000U)  /*!< Value of the External oscillator in Hz */
 
 /*----------------------------------------------------------------------------
  *        Arduino objects - C++ only
