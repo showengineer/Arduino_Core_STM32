@@ -47,8 +47,8 @@ const struct shared_resource_table __attribute__((__section__(".resource_table")
   .reserved = {0, 0},
   .offset = {
     offsetof(struct shared_resource_table, vdev),
-    offsetof(struct shared_resource_table, cm_trace),
-  },
+      offsetof(struct shared_resource_table, cm_trace),
+      },
   /* Virtio device entry */
   .vdev = {
     .type = RSC_VDEV,

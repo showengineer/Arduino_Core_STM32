@@ -45,7 +45,7 @@
 /*As we can have only one interrupt/pin id, don't need to get the port info*/
 typedef struct {
   IRQn_Type irqnb;
-  std::function<void(void)> callback;
+  std::function < void(void) > callback;
 } gpio_irq_conf_str;
 
 /* Private_Defines */
@@ -210,7 +210,7 @@ void stm32_interrupt_enable(GPIO_TypeDef *port, uint16_t pin, callback_function_
   */
 void stm32_interrupt_enable(GPIO_TypeDef *port, uint16_t pin, void (*callback)(void), uint32_t mode)
 {
-  std::function<void(void)> _c = callback;
+  std::function < void(void) > _c = callback;
   stm32_interrupt_enable(port, pin, _c, mode);
 
 }

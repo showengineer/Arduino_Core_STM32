@@ -69,11 +69,11 @@
 #define PC1                     46
 #define PA3                     47      // RX
 #define PD6                     48
-#define PA12                    49      
-#define PA11                    50      
+#define PA12                    49
+#define PA11                    50
 #define PB12                    PIN_A12
 #define PA2                     52      // TX
-#define PC0                     53      
+#define PC0                     53
 #define PB1                     PIN_A13
 #define PB15                    55
 #define PB14                    56
